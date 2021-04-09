@@ -2,11 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import NavBar from './components/navBar/navBar'
+import './reset.css'
 import reportWebVitals from './reportWebVitals';
+import ItemList from './components/lists/item-list'
+import StartupPage from './components/pages/startup_page'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <NavBar />
+    <StartupPage />
   </React.StrictMode>,
   document.getElementById('root')
 );

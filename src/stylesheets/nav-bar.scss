@@ -1,0 +1,39 @@
+#nav-bar,
+nav > * {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  align-items: flex-start;
+  background-color: white;
+}
+
+.social-media-links,
+.menu-items {
+  justify-content: space-between;
+}
+
+.social-media-links {
+  width: 20%;
+}
+
+.menu-items {
+  width: 30%;
+  font-size: 14px;
+}
+
+#nav-bar {
+  padding-top: 20px;
+  padding-right: 80px;
+  padding-bottom: 20px;
+  padding-left: 240px;
+}
+
+.social-media-links {
+  img {
+    height: 17px;
+  }
+}
+
+.connect-btn {
+  margin: 0 13%;
+}

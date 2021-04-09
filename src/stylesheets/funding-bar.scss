@@ -1,0 +1,32 @@
+.funding-bar-container {
+  width: 100%;
+
+  margin: 0 auto;
+  height: 20px;
+  background-color: gray;
+  position: relative;
+  .funding-bar-contents {
+    position: absolute;
+    top: 10;
+    height: 100%;
+    left: 0;
+    z-index: 10;
+    background: linear-gradient(
+      104.61deg,
+      #ff00b8 2.65%,
+      #ff655b 51.83%,
+      #ffc700 100%
+    );
+  }
+}
+
+.funding-bar-container,
+.funding-bar-contents {
+  border-radius: 10px;
+}
+
+.funding-info p {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 0;
+}
