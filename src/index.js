@@ -7,11 +7,17 @@ import './reset.css'
 import reportWebVitals from './reportWebVitals';
 import ItemList from './components/lists/item-list'
 import StartupPage from './components/pages/startup_page'
+import CoursesPage from './components/pages/courses_page'
+import { Route, BrowserRouter as Router } from 'react-router-dom'
 
 ReactDOM.render(
   <React.StrictMode>
     <NavBar />
-    <StartupPage />
+    <Router>
+      <Route path='/startups'><StartupPage /></Route>
+      <Route path='/courses'><CoursesPage /></Route>
+    </Router>
+
   </React.StrictMode>,
   document.getElementById('root')
 );

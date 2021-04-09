@@ -1,0 +1,65 @@
+.banner {
+  margin: 0 auto;
+  height: 300px;
+  position: relative;
+  z-index: 0;
+  .banner-header {
+    width: fit-content;
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 90px;
+    h1 {
+      font-size: 63px;
+    }
+    h1:not(:first-of-type) {
+      margin-top: 10px;
+    }
+  }
+
+  .course-banner-header {
+    margin-left: 200px;
+    margin-top: 120px;
+    h1 {
+      font-size: 50px;
+    }
+    h2 {
+      font-size: 20px;
+      color: white;
+      font-style: italic;
+      text-align: right;
+    }
+  }
+  .earth {
+    margin-right: 40px;
+  }
+
+  .hand-lightbulb {
+    margin-right: -20px;
+  }
+
+  .butterfly {
+    position: absolute;
+    height: 80%;
+    left: 24%;
+  }
+  .earth,
+  .hand-lightbulb {
+    height: 110%;
+  }
+  .group {
+    height: 55%;
+    position: absolute;
+    top: 3%;
+    right: 2%;
+  }
+}
+
+.rounded-top {
+  width: 91%;
+  height: 30px;
+  background-color: white;
+  margin: 30px auto 0 auto;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}

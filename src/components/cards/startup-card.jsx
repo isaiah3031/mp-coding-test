@@ -1,4 +1,4 @@
-import FundingBar from '../funding/funding-bar'
+import StartupFundingBar from '../funding/startup-funding-bar'
 import '../../stylesheets/cards.scss'
 
 const StartupCard = ({ item }) => {
@@ -14,7 +14,7 @@ const StartupCard = ({ item }) => {
       <button className='give-btn'>GIVE</button>
       <button className='learn-btn'>LEARN</button>
     </div>
-    <FundingBar funding={funding} />
+    <StartupFundingBar funding={funding} />
   </li>
 
 }

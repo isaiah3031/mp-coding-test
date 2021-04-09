@@ -31,18 +31,32 @@ export const featuredStartups = {
   },
 }
 
-export const upcomingStartups = {
-  1: {
-    logo: OroVault,
-    description: 'changing the way you gold forever',
-    funding: 83000
-  },
-}
-
 
 export const courses = {
   1: {
-    name: 'Intro to Blockchains',
-    description: 'blockchain, cryptocurrency fundamentals'
+    title: 'Intro to Blockchains',
+    description: 'blockchain, cryptocurrency fundamentals',
+    amountComplete: 8.3
+  },
+  2: {
+    title: 'Intro to Blockchains',
+    description: 'blockchain, cryptocurrency fundamentals',
+    amountComplete: 8.3
+  },
+  3: {
+    title: 'Intro to Blockchains',
+    description: 'blockchain, cryptocurrency fundamentals',
+    amountComplete: 8.3
+  },
+  4: {
+    title: 'Intro to Blockchains',
+    description: 'blockchain, cryptocurrency fundamentals',
+    amountComplete: 8.3
+  },
+  5: {
+    title: 'Intro to Blockchains',
+    description: 'blockchain, cryptocurrency fundamentals',
+    amountComplete: 8.3
   }
+
 }

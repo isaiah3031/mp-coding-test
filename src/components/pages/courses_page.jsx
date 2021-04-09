@@ -1,15 +1,15 @@
 import ItemList from '../lists/item-list'
 import * as data from '../../data'
 import '../../stylesheets/startup-page.scss'
-import StartupBanner from '../banner/startup-banner'
+import CourseBanner from '../banner/course-banner'
 
-const StartupPage = () => {
+const CoursesPage = () => {
   return <>
     <div className='rounded-top'></div>
-    <StartupBanner page='startup' />
+    <CourseBanner />
     <section className='main-content'>
-      <ItemList type='startup-page' title='Featured Startups' items={data.featuredStartups} />
-      <ItemList type='startup-page' title='Upcoming Startups' items={data.featuredStartups} />
+      <ItemList title='My Courses' type='course-page' items={data.courses} />
+      <ItemList title='Featured Courses' type='course-page' items={data.courses} />
       <ul className='bottom-nav'>
         <button>Advise A Startup</button>
         <button>Join Minority Ventures Cohort</button>
@@ -21,4 +21,4 @@ const StartupPage = () => {
   </>
 }
 
-export default StartupPage;
+export default CoursesPage;

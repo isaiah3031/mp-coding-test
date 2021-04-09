@@ -7,8 +7,8 @@
     button {
       border-radius: 15px;
       width: 32%;
-
-      font-size: 20px;
+      color: white;
+      font-size: 27px;
       padding: 10px max(8%);
       background: linear-gradient(
         104.61deg,
@@ -18,4 +18,12 @@
       );
     }
   }
+}
+.rounded-bottom {
+  height: 30px;
+  width: 91.35%;
+  margin: -10px auto 0 auto;
+  background-color: white;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
 }
