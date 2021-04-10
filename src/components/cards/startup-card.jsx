@@ -7,9 +7,9 @@ const StartupCard = ({ item }) => {
 
   // For some reason the learn link wont pass the item as props unless its broken
   // down like this
-  const learnLink = (item) =>
+  const learnLink = () =>
     <Link to={{
-      pathname: '/#/startups/learn',
+      pathname: '/startups/learn',
       state: {
         logo: logo,
         projectName: projectName,

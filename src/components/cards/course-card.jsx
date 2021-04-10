@@ -9,9 +9,9 @@ const CourseCard = ({ item }) => {
 
   // For some reason the learn link wont pass the item as props unless its broken
   // down like this
-  const learnLink = (item) =>
+  const learnLink = () =>
     <Link to={{
-      pathname: '/#/courses/learn',
+      pathname: '/courses/learn',
       state: {
         title: title,
         description: description,
