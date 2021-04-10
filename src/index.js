@@ -1,21 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Route, BrowserRouter as Router } from 'react-router-dom'
+import './reset.css'
 import './index.css';
 import App from './App';
 import NavBar from './components/navBar/navBar'
-import './reset.css'
 import reportWebVitals from './reportWebVitals';
 import ItemList from './components/lists/item-list'
 import StartupPage from './components/pages/startup_page'
 import CoursesPage from './components/pages/courses_page'
-import { Route, BrowserRouter as Router } from 'react-router-dom'
+import StartupLearnPage from './components/pages/startup_learn_page'
+import CourseLearnPage from './components/pages/course_learn_page'
 
 ReactDOM.render(
   <React.StrictMode>
     <NavBar />
     <Router>
-      <Route path='/startups'><StartupPage /></Route>
-      <Route path='/courses'><CoursesPage /></Route>
+      <Route path='/startups/learn'><StartupLearnPage /></Route>
+      <Route exact path='/courses/learn'><CourseLearnPage /></Route>
+      <Route exact path='/startups'><StartupPage /></Route>
+      <Route exact path='/courses'><CoursesPage /></Route>
+
     </Router>
 
   </React.StrictMode>,
