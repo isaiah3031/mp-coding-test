@@ -9,7 +9,7 @@ const StartupCard = ({ item }) => {
   // down like this
   const learnLink = (item) =>
     <Link to={{
-      pathname: '/startups/learn',
+      pathname: '/#/startups/learn',
       state: {
         logo: logo,
         projectName: projectName,

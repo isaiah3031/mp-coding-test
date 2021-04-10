@@ -16,10 +16,10 @@ ReactDOM.render(
   <React.StrictMode>
     <NavBar />
     <Router>
-      <Route path='/startups/learn'><StartupLearnPage /></Route>
-      <Route exact path='/courses/learn'><CourseLearnPage /></Route>
-      <Route exact path='/startups'><StartupPage /></Route>
-      <Route exact path='/courses'><CoursesPage /></Route>
+      <Route path='/#/startups/learn'><StartupLearnPage /></Route>
+      <Route exact path='/#/courses/learn'><CourseLearnPage /></Route>
+      <Route exact path='/#/startups'><StartupPage /></Route>
+      <Route exact path='/#/courses'><CoursesPage /></Route>
 
     </Router>
 

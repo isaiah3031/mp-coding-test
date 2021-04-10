@@ -11,7 +11,7 @@ const CourseCard = ({ item }) => {
   // down like this
   const learnLink = (item) =>
     <Link to={{
-      pathname: '/courses/learn',
+      pathname: '/#/courses/learn',
       state: {
         title: title,
         description: description,
