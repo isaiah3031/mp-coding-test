@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, HashRouter as Router } from 'react-router-dom'
+import { Route, BrowserRouter as Router } from 'react-router-dom'
 import './reset.css'
 import './index.css';
 import App from './App';
@@ -15,11 +15,11 @@ import CourseLearnPage from './components/pages/course_learn_page'
 ReactDOM.render(
   <React.StrictMode>
     <NavBar />
-    <Router>
-      <Route path='/#/startups/learn'><StartupLearnPage /></Route>
-      <Route exact path='/#/courses/learn'><CourseLearnPage /></Route>
-      <Route exact path='/#/startups'><StartupPage /></Route>
-      <Route exact path='/#/courses'><CoursesPage /></Route>
+    <Router basename={process.env.PUBLIC_URL}>
+      <Route path='/startups/learn'><StartupLearnPage /></Route>
+      <Route exact path='/courses/learn'><CourseLearnPage /></Route>
+      <Route exact path='/startups'><StartupPage /></Route>
+      <Route exact path='/courses'><CoursesPage /></Route>
 
     </Router>
 
