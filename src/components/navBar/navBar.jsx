@@ -18,7 +18,7 @@ const NavBar = () => {
           <img className='social-media-icon' src={linkedinIcon} />
           <img className='social-media-icon' src={instaIcon} />
         </ul>
-        <button className='connect-btn'>Connect Wallet</button>
+        <button className='connect-btn'><p>Connect Wallet</p></button>
         <ul className='menu-items'>
           <li>Service</li>
           <li>Events</li>

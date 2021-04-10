@@ -9,7 +9,7 @@ const StartupPage = () => {
     <StartupBanner page='startup' />
     <section className='main-content'>
       <ItemList type='startup-page' title='Featured Startups' items={data.featuredStartups} />
-      <ItemList type='startup-page' title='Upcoming Startups' items={data.featuredStartups} />
+      <ItemList type='startup-page' title='Upcoming Startups' items={data.upcomingStartups} />
       <ul className='bottom-nav'>
         <button>Advise A Startup</button>
         <button>Join Minority Ventures Cohort</button>
@@ -17,7 +17,6 @@ const StartupPage = () => {
       </ul>
 
     </section>
-    <div className='rounded-bottom'></div>
   </>
 }
 

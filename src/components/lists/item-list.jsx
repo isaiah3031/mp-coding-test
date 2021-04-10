@@ -9,11 +9,10 @@ const ItemList = ({ type, title, items }) => {
     } else if (type == 'course-page') {
       return <CourseCard item={item} />
     }
-
   }
 
   return <div className='item-list-container'>
-    <h2>{title}</h2>
+    <h2 className='category-header'>{title}</h2>
     <ul className='item-list'>
       {Object.values(items).map(item => card(item))}
     </ul>

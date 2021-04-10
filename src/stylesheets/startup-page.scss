@@ -1,9 +1,14 @@
 .main-content {
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
   .bottom-nav {
-    margin: 10px 0;
+    margin: 10px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 95%;
     button {
       border-radius: 15px;
       width: 32%;
@@ -21,9 +26,8 @@
 }
 .rounded-bottom {
   height: 30px;
-  width: 91.35%;
-  margin: -10px auto 0 auto;
-  background-color: white;
+  width: 101%;
+  background-color: red;
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
 }
